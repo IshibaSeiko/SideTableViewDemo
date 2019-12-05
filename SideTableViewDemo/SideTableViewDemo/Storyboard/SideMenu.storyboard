@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hJa-c3-fdV">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu View Controller-->
+        <scene sceneID="qOI-eD-4Hh">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="hJa-c3-fdV" customClass="SideMenuViewController" customModule="SideTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gmi-Uj-zI8">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Drw-9K-6eF">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuTableViewCell" id="KUu-xH-f3f" customClass="SideMenuTableViewCell" customModule="SideTableViewDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="1366" height="51.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KUu-xH-f3f" id="BSH-35-xzY">
+                                            <rect key="frame" x="0.0" y="0.0" width="1366" height="51.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SVB-I0-lrW" firstAttribute="trailing" secondItem="Drw-9K-6eF" secondAttribute="trailing" id="GHf-t6-daP"/>
+                            <constraint firstItem="SVB-I0-lrW" firstAttribute="bottom" secondItem="Drw-9K-6eF" secondAttribute="bottom" id="I5F-4q-eN4"/>
+                            <constraint firstItem="Drw-9K-6eF" firstAttribute="leading" secondItem="SVB-I0-lrW" secondAttribute="leading" id="d9x-5g-h0M"/>
+                            <constraint firstItem="Drw-9K-6eF" firstAttribute="top" secondItem="SVB-I0-lrW" secondAttribute="top" id="gVi-Qz-jmA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SVB-I0-lrW"/>
+                    </view>
+                    <connections>
+                        <outlet property="sideMenuTable" destination="Drw-9K-6eF" id="OAv-kv-Zk6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce1-QE-ZNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="117"/>
+        </scene>
+    </scenes>
+</document>
