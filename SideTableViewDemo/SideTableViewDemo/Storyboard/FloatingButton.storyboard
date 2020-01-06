@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SW7-3x-1zo">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Floating Button View Controller-->
+        <scene sceneID="Ydv-iT-8g2">
+            <objects>
+                <viewController id="SW7-3x-1zo" customClass="FloatingButtonViewController" customModule="SideTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KtG-uH-7Z7">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gms-XC-wsa">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
+                                <connections>
+                                    <segue destination="eWl-ye-eqc" kind="embed" id="R6R-Vt-yxX"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ0-Km-gbq">
+                                <rect key="frame" x="232" y="839" width="30" height="53"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="d6K-Y9-CaQ"/>
+                                    <constraint firstAttribute="height" constant="53" id="gd7-gw-X6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sideMenuHideButton:" destination="SW7-3x-1zo" eventType="touchUpInside" id="bLx-9C-0Yn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9kE-Pp-SeQ" firstAttribute="bottom" secondItem="gms-XC-wsa" secondAttribute="bottom" id="5Z9-Y5-wzn"/>
+                            <constraint firstItem="jZ0-Km-gbq" firstAttribute="leading" secondItem="9kE-Pp-SeQ" secondAttribute="leading" constant="232" id="E8s-Ja-TCz"/>
+                            <constraint firstItem="gms-XC-wsa" firstAttribute="top" secondItem="9kE-Pp-SeQ" secondAttribute="top" id="M7f-3t-ZnP"/>
+                            <constraint firstItem="9kE-Pp-SeQ" firstAttribute="trailing" secondItem="gms-XC-wsa" secondAttribute="trailing" id="x8b-1T-z5x"/>
+                            <constraint firstItem="gms-XC-wsa" firstAttribute="leading" secondItem="9kE-Pp-SeQ" secondAttribute="leading" id="z8G-n5-YWo"/>
+                            <constraint firstItem="9kE-Pp-SeQ" firstAttribute="bottom" secondItem="jZ0-Km-gbq" secondAttribute="bottom" constant="112" id="zlR-s4-GWZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9kE-Pp-SeQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="gms-XC-wsa" id="WJ1-Vk-0tf"/>
+                        <outlet property="sideMenuHideButton" destination="jZ0-Km-gbq" id="YNb-f5-x6W"/>
+                        <outlet property="xLayoutConstraint" destination="E8s-Ja-TCz" id="94c-pS-pjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xp8-mS-yE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.838945827232791" y="79.6875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LYB-kc-Ih3">
+            <objects>
+                <viewController id="eWl-ye-eqc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dyo-OY-jnA">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZ7-O7-zEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="73"/>
+        </scene>
+    </scenes>
+</document>

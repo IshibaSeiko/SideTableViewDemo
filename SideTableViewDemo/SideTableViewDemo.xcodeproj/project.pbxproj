@@ -21,6 +21,8 @@
 		88DBF2632398A1B200EDD61D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DBF2622398A1B200EDD61D /* SideMenuViewController.swift */; };
 		88DBF26A2398A6D600EDD61D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DBF2692398A6D600EDD61D /* Detail.storyboard */; };
 		88DBF26C2398C14200EDD61D /* CustomSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DBF26B2398C14200EDD61D /* CustomSplitViewController.swift */; };
+		88E20B912398DA410035738F /* FloatingButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E20B902398DA410035738F /* FloatingButton.storyboard */; };
+		88E20B932398DE0B0035738F /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E20B922398DE0B0035738F /* FloatingButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		88DBF2622398A1B200EDD61D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		88DBF2692398A6D600EDD61D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		88DBF26B2398C14200EDD61D /* CustomSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplitViewController.swift; sourceTree = "<group>"; };
+		88E20B902398DA410035738F /* FloatingButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FloatingButton.storyboard; sourceTree = "<group>"; };
+		88E20B922398DE0B0035738F /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				88DBF25623989B1C00EDD61D /* InitialView.storyboard */,
+				88E20B902398DA410035738F /* FloatingButton.storyboard */,
 				88DBF2602398A10E00EDD61D /* SideMenu.storyboard */,
 				88DBF2692398A6D600EDD61D /* Detail.storyboard */,
 			);
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				88DBF26B2398C14200EDD61D /* CustomSplitViewController.swift */,
+				88E20B922398DE0B0035738F /* FloatingButtonViewController.swift */,
 				88DBF2622398A1B200EDD61D /* SideMenuViewController.swift */,
 				88DBF25A23989D5600EDD61D /* DetailViewController.swift */,
 			);
@@ -275,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DBF23123989A7200EDD61D /* LaunchScreen.storyboard in Resources */,
+				88E20B912398DA410035738F /* FloatingButton.storyboard in Resources */,
 				88DBF2612398A10E00EDD61D /* SideMenu.storyboard in Resources */,
 				88DBF22E23989A7200EDD61D /* Assets.xcassets in Resources */,
 				88DBF25723989B1C00EDD61D /* InitialView.storyboard in Resources */,
@@ -306,6 +313,7 @@
 			files = (
 				88DBF26C2398C14200EDD61D /* CustomSplitViewController.swift in Sources */,
 				88DBF25E23989DD700EDD61D /* SideMenuTableViewCell.swift in Sources */,
+				88E20B932398DE0B0035738F /* FloatingButtonViewController.swift in Sources */,
 				88DBF22523989A7100EDD61D /* AppDelegate.swift in Sources */,
 				88DBF25B23989D5600EDD61D /* DetailViewController.swift in Sources */,
 				88DBF22723989A7100EDD61D /* SceneDelegate.swift in Sources */,
